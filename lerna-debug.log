@@ -1,0 +1,88 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   'conventional-commits': true,
+0 silly argv   conventionalCommits: true,
+0 silly argv   'conventional-prerelease': true,
+0 silly argv   conventionalPrerelease: true,
+0 silly argv   lernaVersion: '8.1.2',
+0 silly argv   '$0': 'node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.1.2
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["libs/*","apps/*"]
+3 verbose rootPath C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup
+4 info versioning independent
+5 silly isAnythingCommitted
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 verbose currentBranch main
+9 silly remoteBranchExists
+10 silly isBehindUpstream
+11 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 2
+12 silly hasTags
+13 verbose hasTags true
+14 silly git-describe.sync "v0.0.1-4-gfb7140d" => {"lastTagName":"v0.0.1","lastVersion":"v0.0.1","refCount":"4","sha":"fb7140d","isDirty":false}
+15 info Looking for changed packages since v0.0.1
+16 silly checking diff apps/app-one
+17 silly no diff found in @semantic-versioned-monorepo-setup/app-one
+18 silly checking diff libs/dependency-one
+19 silly found diff in libs/dependency-one/index.js
+20 verbose filtered diff [ 'libs/dependency-one/index.js' ]
+21 silly checking diff libs/dependency-two
+22 silly no diff found in @semantic-versioned-monorepo-setup/dependency-two
+23 verbose updated @semantic-versioned-monorepo-setup/app-one
+24 verbose updated @semantic-versioned-monorepo-setup/dependency-one
+25 verbose git-describe undefined => "v0.0.1-4-gfb7140d"
+26 silly git-describe parsed => {"lastTagName":"v0.0.1","lastVersion":"v0.0.1","refCount":"4","sha":"fb7140d","isDirty":false}
+27 silly independent for @semantic-versioned-monorepo-setup/app-one at C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup\apps\app-one
+28 verbose getChangelogConfig using preset "conventional-changelog-angular"
+29 silly npa Result {
+29 silly npa   type: 'tag',
+29 silly npa   registry: true,
+29 silly npa   where: undefined,
+29 silly npa   raw: 'conventional-changelog-angular',
+29 silly npa   name: 'conventional-changelog-angular',
+29 silly npa   escapedName: 'conventional-changelog-angular',
+29 silly npa   scope: undefined,
+29 silly npa   rawSpec: '',
+29 silly npa   saveSpec: null,
+29 silly npa   fetchSpec: 'latest',
+29 silly npa   gitRange: undefined,
+29 silly npa   gitCommittish: undefined,
+29 silly npa   hosted: undefined
+29 silly npa }
+30 verbose getChangelogConfig Attempting to resolve preset "conventional-changelog-angular"
+31 info getChangelogConfig Successfully resolved preset "conventional-changelog-angular"
+32 verbose independent increment 0.0.1 by preminor
+33 silly independent for @semantic-versioned-monorepo-setup/dependency-one at C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup\libs\dependency-one
+34 verbose independent increment 0.0.1 by preminor
+35 info execute Skipping releases
+36 silly lifecycle No script for "preversion" in "root", continuing
+37 silly lifecycle No script for "preversion" in "@semantic-versioned-monorepo-setup/dependency-one", continuing
+38 verbose version @semantic-versioned-monorepo-setup/dependency-one has no lockfile. Skipping lockfile update.
+39 silly lifecycle No script for "version" in "@semantic-versioned-monorepo-setup/dependency-one", continuing
+40 silly independent for @semantic-versioned-monorepo-setup/dependency-one at C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup\libs\dependency-one
+41 silly independent writing new entry: "# 0.1.0-alpha.0 (2024-04-26)\n\n\n### Bug Fixes\n\n* added initial comment for dependency-one for testing semantic versioning ([8124b9a](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/8124b9a0becb88d8855fa9e6c342caa6de4b55da))\n\n\n\n## 0.0.1 (2024-04-26)\n\n\n### Features\n\n* initial commit ([ee8a56c](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/ee8a56cff7e243bbb0fa4e7cf0dcd6cd2dc9fe2e))\n\n\n\n"
+42 verbose independent wrote C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup\libs\dependency-one\CHANGELOG.md
+43 silly lifecycle No script for "preversion" in "@semantic-versioned-monorepo-setup/app-one", continuing
+44 verbose version @semantic-versioned-monorepo-setup/app-one has no lockfile. Skipping lockfile update.
+45 silly lifecycle No script for "version" in "@semantic-versioned-monorepo-setup/app-one", continuing
+46 silly independent for @semantic-versioned-monorepo-setup/app-one at C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup\apps\app-one
+47 silly independent writing new entry: "# 0.1.0-alpha.0 (2024-04-26)\n\n\n\n## 0.0.1 (2024-04-26)\n\n\n### Bug Fixes\n\n* added missing version ([090ffa5](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/090ffa59d85fe97efe0a0e2543aad5a202bd8574))\n\n\n### Features\n\n* initial commit ([ee8a56c](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/ee8a56cff7e243bbb0fa4e7cf0dcd6cd2dc9fe2e))\n\n\n\n"
+48 verbose independent wrote C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup\apps\app-one\CHANGELOG.md
+49 silly lifecycle No script for "version" in "root", continuing
+50 verbose version Updating root package-lock.json
+51 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
+51 error npm ERR! code E404
+51 error npm ERR! 404 Not Found - GET https://registry.npmjs.org/@semantic-versioned-monorepo-setup%2fdependency-one - Not found
+51 error npm ERR! 404
+51 error npm ERR! 404  '@semantic-versioned-monorepo-setup/dependency-one@^0.1.0-alpha.0' is not in this registry.
+51 error npm ERR! 404
+51 error npm ERR! 404 Note that you can also install from a
+51 error npm ERR! 404 tarball, folder, http url, or git url.
+51 error
+51 error npm ERR! A complete log of this run can be found in: C:\Users\GediminasBublys\AppData\Local\npm-cache\_logs\2024-04-26T14_38_05_584Z-debug-0.log
+51 error     at makeError (C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup\node_modules\execa\lib\error.js:59:11)
+51 error     at handlePromise (C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup\node_modules\execa\index.js:114:26)
+51 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+51 error     at async VersionCommand.updatePackageVersions (C:\Users\GediminasBublys\WebstormProjects\semantic-versioned-monorepo-setup\node_modules\lerna\dist\index.js:8469:13)
+51 error     at async Promise.all (index 0)
