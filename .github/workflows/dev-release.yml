@@ -1,14 +1,15 @@
 name: Create a dev release
 
 on:
-  workflow_dispatch:
-  push:
+  pull_request:
+    types: [closed]
     branches:
       - development
+      - main
 
 jobs:
   publish_dev_release:
-    # if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,11 +22,12 @@ jobs:
           node-version: 20
       - run: yarn --frozen-lockfile
 
-      - name: "Setup github user"
+      - name: "Publish dev release"
         run: |
           git config --global user.email "bot@semantic.release"
           git config --global user.name "Semantic Release"
-
-      - name: "Publish dev release"
-        run: lerna version --conventional-commits --conventional-prerelease --yes
-
+          if [ ${{ github.base_ref }} = development ]; then
+            npx lerna version --conventional-commits --conventional-prerelease --preid dev --no-changelog --yes
+          else
+            npx lerna version --conventional-commits --conventional-graduate --yes
+          fi
