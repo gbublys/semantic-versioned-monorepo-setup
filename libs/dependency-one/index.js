@@ -1,6 +1,6 @@
 import { value as dependencyFromLibraryTwo } from '@semantic-versioned-monorepo-setup/dependency-two';
 
-// dependency-one
+// Trigger change 1
 
 export const dependencyFromLibraryOne = 'dependency-one';
 
