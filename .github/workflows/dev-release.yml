@@ -30,4 +30,5 @@ jobs:
             npx lerna version --conventional-commits --conventional-prerelease --preid dev --no-changelog --yes
           else
             npx lerna version --conventional-commits --conventional-graduate --yes
+            git push origin development
           fi
