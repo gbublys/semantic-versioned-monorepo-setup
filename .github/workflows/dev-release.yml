@@ -15,4 +15,4 @@ jobs:
         with:
           node-version: 18
       - run: yarn --frozen-lockfile
-      - run: lerna version --conventional-commits --conventional-prerelease
+      - run: lerna version --conventional-commits --conventional-prerelease --yes
