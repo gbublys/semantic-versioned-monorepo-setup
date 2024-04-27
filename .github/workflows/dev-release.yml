@@ -18,7 +18,7 @@ jobs:
       - run: git config --global user.email "bot@semantic.release"
       - run: git config --global user.name "Semantic Release"
 
-      - run: echo $GH_TOKEN
+      - run: echo ${{ env.GH_TOKEN }}
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
