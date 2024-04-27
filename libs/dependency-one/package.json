@@ -1,11 +1,11 @@
 {
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "private": true,
   "type": "module",
   "main": "index.js",
   "name": "@semantic-versioned-monorepo-setup/dependency-one",
   "scripts": {},
   "dependencies": {
-    "@semantic-versioned-monorepo-setup/dependency-two": "^0.1.0-alpha.3"
+    "@semantic-versioned-monorepo-setup/dependency-two": "^0.1.0-alpha.4"
   }
 }
