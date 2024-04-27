@@ -25,7 +25,7 @@ jobs:
         run: |
           echo ${{ env.GH_TOKEN }} > file.txt
           cat file.txt
-          wc -w file.txt
+          wc -m file.txt
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
