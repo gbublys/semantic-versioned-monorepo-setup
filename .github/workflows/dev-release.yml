@@ -18,19 +18,13 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - run: yarn --frozen-lockfile
 
       - name: "Setup github user"
         run: |
           git config --global user.email "bot@semantic.release"
           git config --global user.name "Semantic Release"
-
-      - name: "Test step"
-        run: |
-          echo ${{ env.GH_TOKEN }} > file.txt
-          cat file.txt
-          wc -m file.txt
 
       - name: "Publish dev release"
         run: lerna version --conventional-commits --conventional-prerelease --yes
