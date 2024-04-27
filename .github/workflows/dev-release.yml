@@ -17,6 +17,12 @@ jobs:
       - run: yarn --frozen-lockfile
       - run: git config --global user.email "bot@semantic.release"
       - run: git config --global user.name "Semantic Release"
-      - run: lerna version --conventional-commits --conventional-prerelease --yes
+
+      - run: "echo ${ GH_TOKEN }"
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: "Publish dev release"
+        run: lerna version --conventional-commits --conventional-prerelease --yes
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
