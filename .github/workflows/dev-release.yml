@@ -25,7 +25,7 @@ jobs:
         run: |
           echo ${{ env.GH_TOKEN }} > file.txt
           cat file.txt
-          wc -m file.txt
+          wc -c file.txt
 
       - name: "Publish dev release"
         env:
