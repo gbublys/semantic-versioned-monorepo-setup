@@ -18,3 +18,5 @@ jobs:
       - run: git config --global user.email "bot@semantic.release"
       - run: git config --global user.name "Semantic Release"
       - run: lerna version --conventional-commits --conventional-prerelease --yes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
