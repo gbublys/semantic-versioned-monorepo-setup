@@ -1,22 +1,33 @@
 name: Create a dev release
 
 on:
-  workflow_dispatch:
-  push:
+  pull_request:
+    types: [closed]
     branches:
       - development
+      - main
 
 jobs:
   publish_dev_release:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_TOKEN }}
+
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - run: yarn --frozen-lockfile
-      - run: git config --global user.email "bot@semantic.release"
-      - run: git config --global user.name "Semantic Release"
-      - run: lerna version --conventional-commits --conventional-prerelease --yes
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: "Publish dev release"
+        run: |
+          git config --global user.email "bot@semantic.release"
+          git config --global user.name "Semantic Release"
+          if [ ${{ github.base_ref }} = development ]; then
+            npx lerna version --conventional-commits --conventional-prerelease --preid dev --no-changelog --yes
+          else
+            npx lerna version --conventional-commits --conventional-graduate --yes
+          fi
