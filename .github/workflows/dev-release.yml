@@ -15,4 +15,6 @@ jobs:
         with:
           node-version: 18
       - run: yarn --frozen-lockfile
+      - run: git config --global user.email "bot@semantic.release"
+      - run: git config --global user.name "Semantic Release"
       - run: lerna version --conventional-commits --conventional-prerelease --yes
