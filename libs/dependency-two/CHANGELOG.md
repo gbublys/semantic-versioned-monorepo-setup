@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0-alpha.2 (2024-04-27)
+
+
+### Bug Fixes
+
+* added GH_TOKEN ([28a6b53](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/28a6b53bd3289b9772a65c8293d145376d5ca6ad))
+
+
+
+
+
 # 0.1.0-alpha.1 (2024-04-26)
 
 
