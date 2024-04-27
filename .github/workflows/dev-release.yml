@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -28,7 +31,5 @@ jobs:
           wc -m file.txt
 
       - name: "Publish dev release"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: lerna version --conventional-commits --conventional-prerelease --yes
 
