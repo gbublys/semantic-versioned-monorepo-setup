@@ -26,10 +26,9 @@ jobs:
           echo ${{ env.GH_TOKEN }} > file.txt
           cat file.txt
           wc -m file.txt
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: "Publish dev release"
-        run: lerna version --conventional-commits --conventional-prerelease --yes
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: lerna version --conventional-commits --conventional-prerelease --yes
+
