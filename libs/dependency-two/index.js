@@ -1,1 +1,1 @@
-export const value = 'dependency-two';
+export const value = 'dependency-two-1';
