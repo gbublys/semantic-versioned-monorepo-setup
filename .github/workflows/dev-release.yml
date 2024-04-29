@@ -37,5 +37,5 @@ jobs:
         run: |
           git checkout development
           git pull origin development
-          git merge --no-ff main -m "Merge main into development"
+          git merge main -m "Merge main into development"
           git push origin development
