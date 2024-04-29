@@ -31,3 +31,11 @@ jobs:
           else
             npx lerna version --conventional-commits --conventional-graduate --yes
           fi
+
+      - name: "Sync-up development branch"
+        if: github.base_ref == 'main'
+        run: |
+          git checkout development
+          git pull origin development
+          git merge --no-ff main -m "Merge main into development"
+          git push origin development
