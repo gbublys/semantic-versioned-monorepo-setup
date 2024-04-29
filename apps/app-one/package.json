@@ -1,9 +1,9 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "name": "@semantic-versioned-monorepo-setup/app-one",
   "type": "module",
   "dependencies": {
-    "@semantic-versioned-monorepo-setup/dependency-one": "^0.4.2"
+    "@semantic-versioned-monorepo-setup/dependency-one": "^0.4.3"
   }
 }
