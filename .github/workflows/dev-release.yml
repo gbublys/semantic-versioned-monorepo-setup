@@ -33,6 +33,7 @@ jobs:
           fi
 
       - name: "Sync-up development branch"
+        if: github.base_ref == 'main'
         run: |
           git checkout development
           git pull origin development
