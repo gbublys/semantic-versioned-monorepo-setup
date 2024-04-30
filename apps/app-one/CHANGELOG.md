@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0-dev.0](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.12.1-dev.0...@semantic-versioned-monorepo-setup/app-one@0.13.0-dev.0) (2024-04-30)
+
+
+### Features
+
+* release with --amend ([#68](https://github.com/gbublys/semantic-versioned-monorepo-setup/issues/68)) ([22369e7](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/22369e7083afac4dae4b55140f7bedcdb6de0d97))
+
+
+
+
+
 ## [0.12.1-dev.0](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.12.0-dev.0...@semantic-versioned-monorepo-setup/app-one@0.12.1-dev.0) (2024-04-30)
 
 **Note:** Version bump only for package @semantic-versioned-monorepo-setup/app-one
