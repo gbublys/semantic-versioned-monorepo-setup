@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.11.0...@semantic-versioned-monorepo-setup/app-one@0.12.0) (2024-04-30)
+
+
+### Features
+
+* with --include-merged-tags and rebase test ([d8b7d14](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/d8b7d1435f0bdf9f7dceb890c462318a95666f8f))
+
+
 # [0.12.0-dev.0](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.11.0...@semantic-versioned-monorepo-setup/app-one@0.12.0-dev.0) (2024-04-30)
 
 
