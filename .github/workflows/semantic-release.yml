@@ -1,15 +1,13 @@
 name: Create a semantic release
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - development
       - main
 
 jobs:
   semantic_release:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,5 +35,5 @@ jobs:
         run: |
           git checkout development
           git pull origin development
-          git merge main -m "Merge main into development"
+          git pull origin main
           git push origin development
