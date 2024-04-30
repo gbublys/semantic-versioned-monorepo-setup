@@ -27,7 +27,7 @@ jobs:
           if [ ${{ github.ref_name }} = development ]; then
             npx lerna version --conventional-commits --conventional-prerelease --no-changelog --preid dev --yes
           else
-            npx lerna version --conventional-commits --conventional-graduate --yes --include-merged-tags
+            npx lerna version --conventional-commits --conventional-graduate --yes
           fi
 
       - name: "Sync-up development branch"
