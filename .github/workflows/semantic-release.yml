@@ -24,14 +24,14 @@ jobs:
         run: |
           git config --global user.email "bot@semantic.release"
           git config --global user.name "Semantic Release"
-          if [ ${{ github.base_ref }} = development ]; then
+          if [ ${{ github.ref_name }} = development ]; then
             npx lerna version --conventional-commits --conventional-prerelease --no-changelog --preid dev --yes
           else
             npx lerna version --conventional-commits --conventional-graduate --yes --include-merged-tags
           fi
 
       - name: "Sync-up development branch"
-        if: github.base_ref == 'main'
+        if: github.ref_name == 'main'
         run: |
           git checkout development
           git pull origin development
