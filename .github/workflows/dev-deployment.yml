@@ -21,9 +21,6 @@ jobs:
         run: lerna run build --scope @semantic-versioned-monorepo-setup/app-one
 
       - name: Deploy to dev environment
+        if: contains(github.ref, '-dev.')
         run: |
-          if [[ "${{ github.ref }}" == *"-dev."* ]]; then
-            echo "Deploying app-one to dev environment"
-          else
-            echo "Not a dev release. Skipping deployment."
-          fi
+          echo "Deploying app-one to dev environment"
