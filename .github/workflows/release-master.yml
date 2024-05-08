@@ -1,0 +1,29 @@
+name: release-master
+
+on:
+  push:
+    tags:
+      - '!*-next.*' # Ignore every dev release
+      - '@semantic-versioned-monorepo-setup/app-one@*'
+
+jobs:
+  app_one:
+    name: 'app-one'
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/@semantic-versioned-monorepo-setup/app-one@')
+    steps:
+      - uses: actions/checkout@v4
+#      - uses: actions/setup-node@v4
+#        with:
+#          node-version: 20
+#      - run: yarn --frozen-lockfile
+#
+#      - name: Build and publish docker image
+#        run: |
+#          version=$(npx dot-json ./apps/app-one/package.json version)
+#          echo "image - safty-platform:$version"
+#          lerna run build --scope @semantic-versioned-monorepo-setup/app-one
+#
+#      - name: Deploy to dev environment
+#        run: |
+#          echo "Deploying to dev environment"
