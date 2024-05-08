@@ -18,7 +18,10 @@ jobs:
       - run: yarn --frozen-lockfile
       - name: Build and public docker file
         # Yes, this is not a docker release...
-        run: lerna run build --scope @semantic-versioned-monorepo-setup/app-one
+        run: |
+          version=$(npx dot-json ./apps/app-one/package.json version)
+          echo "image - app-one:$version"
+          lerna run build --scope @semantic-versioned-monorepo-setup/app-one
 
       - name: Deploy to dev environment
         if: contains(github.ref, '-dev.')
