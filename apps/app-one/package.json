@@ -3,6 +3,9 @@
   "private": true,
   "name": "@semantic-versioned-monorepo-setup/app-one",
   "type": "module",
+  "scripts": {
+    "build": "node index.js "
+  },
   "dependencies": {
     "@semantic-versioned-monorepo-setup/dependency-one": "^0.6.0"
   }
