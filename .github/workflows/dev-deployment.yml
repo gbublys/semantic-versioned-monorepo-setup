@@ -1,0 +1,26 @@
+name: Deploy a dev release
+
+on:
+  push:
+    tags:
+      - '@semantic-versioned-monorepo-setup/app-one@*'
+
+jobs:
+  app_one:
+    name: 'app-one - dev release'
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/@semantic-versioned-monorepo-setup/app-one@')
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: yarn --frozen-lockfile
+      - name: Build and public docker file
+        # Yes, this is not a docker release...
+        run: lerna run build --scope @semantic-versioned-monorepo-setup/app-one
+
+      - name: Deploy to dev environment
+        if: contains(github.ref, '-dev.')
+        run: |
+          echo "Deploying app-one to dev environment"
