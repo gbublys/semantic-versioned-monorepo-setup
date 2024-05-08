@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0-dev.0](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/dependency-one@0.6.0...@semantic-versioned-monorepo-setup/dependency-one@0.7.0-dev.0) (2024-05-08)
+
+
+### Features
+
+* added feature 3 ([0c1100e](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/0c1100ecd563838f15f60f9dcd4cd4031c49946a))
+
+
+
+
+
 # [0.6.0](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/dependency-one@0.6.0-dev.0...@semantic-versioned-monorepo-setup/dependency-one@0.6.0) (2024-04-29)
 
 **Note:** Version bump only for package @semantic-versioned-monorepo-setup/dependency-one
