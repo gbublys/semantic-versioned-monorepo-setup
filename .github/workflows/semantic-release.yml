@@ -14,20 +14,20 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
+      - run: yarn --frozen-lockfile
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: yarn --frozen-lockfile
 
       - name: "Publish dev release"
         run: |
           git config --global user.email "bot@semantic.release"
           git config --global user.name "Semantic Release"
-          if [ ${{ github.ref_name }} = development ]; then
-            npx lerna version --conventional-commits --conventional-prerelease --preid dev --yes
-          else
+          if [ ${{ github.ref_name }} = main ]; then
             npx lerna version --conventional-commits --conventional-graduate --yes
+          else
+            npx lerna version --conventional-commits --conventional-prerelease --preid next --yes
           fi
 
       - name: "Sync-up development branch"
