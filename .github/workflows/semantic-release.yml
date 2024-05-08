@@ -1,7 +1,7 @@
 name: Create a semantic release
 
 on:
-  pull_request:
+  push:
     branches:
       - development
       - main
