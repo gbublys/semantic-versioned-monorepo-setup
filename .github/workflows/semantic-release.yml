@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - development
-      - main
+      - master
 
 jobs:
   semantic_release:
