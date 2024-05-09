@@ -31,9 +31,9 @@ jobs:
           fi
 
       - name: "Sync-up development branch"
-        if: github.ref_name == 'main'
+        if: github.ref_name == 'master'
         run: |
           git checkout development
           git pull origin development
-          git pull origin main --ff
+          git pull origin master --ff
           git push origin development
