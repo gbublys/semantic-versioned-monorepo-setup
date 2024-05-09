@@ -1,5 +1,5 @@
 {
-  "version": "0.31.0-next.19",
+  "version": "0.31.0-next.20",
   "private": true,
   "name": "@semantic-versioned-monorepo-setup/app-one",
   "type": "module",
