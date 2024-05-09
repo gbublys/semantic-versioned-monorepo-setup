@@ -24,7 +24,7 @@ jobs:
         run: |
           git config --global user.email "bot@semantic.release"
           git config --global user.name "Semantic Release"
-          if [ ${{ github.ref_name }} = main ]; then
+          if [ ${{ github.ref_name }} = master ]; then
             npx lerna version --conventional-commits --conventional-graduate --yes
           else
             npx lerna version --conventional-commits --conventional-prerelease --preid next --yes
