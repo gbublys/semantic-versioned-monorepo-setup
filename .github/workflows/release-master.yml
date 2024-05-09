@@ -3,8 +3,8 @@ name: release-master
 on:
   push:
     tags:
-      - '!*-next.*' # Ignore every dev release
-      - '@semantic-versioned-monorepo-setup/app-one@*'
+      - '!**-next.**' # Ignore every dev release
+      - '@semantic-versioned-monorepo-setup/app-one@**'
 
 jobs:
   app_one:
