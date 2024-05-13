@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
-      - run: yarn --frozen-lockfile
+      - run: yarn global add lerna
 
       - uses: actions/setup-node@v4
         with:
@@ -25,9 +25,9 @@ jobs:
           git config --global user.email "bot@semantic.release"
           git config --global user.name "Semantic Release"
           if [ ${{ github.ref_name }} = master ]; then
-            npx lerna version --conventional-commits --conventional-graduate --yes
+            lerna version --conventional-commits --conventional-graduate --yes
           else
-            npx lerna version --conventional-commits --conventional-prerelease --preid next --yes
+            lerna version --conventional-commits --conventional-prerelease --preid next --yes
           fi
 
       - name: "Sync-up development branch"
