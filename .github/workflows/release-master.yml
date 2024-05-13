@@ -4,7 +4,7 @@ on:
   push:
     tags:
       - '@semantic-versioned-monorepo-setup/app-one@**'
-      - '!**-next.**' # Ignore every dev release
+      - '!*-next.*' # Ignore every dev release
 
 jobs:
   app_one:

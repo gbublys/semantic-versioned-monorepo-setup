@@ -3,7 +3,7 @@ name: release-dev
 on:
   push:
     tags:
-      - '@semantic-versioned-monorepo-setup/app-one@**-next.**'
+      - '@semantic-versioned-monorepo-setup/app-one@*-next.*'
 
 jobs:
   app_one:
