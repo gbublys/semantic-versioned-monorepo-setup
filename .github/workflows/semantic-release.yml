@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
-      - run: yarn install -g lerna
+      - run: yarn global add lerna
 
       - uses: actions/setup-node@v4
         with:
