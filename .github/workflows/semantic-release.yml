@@ -29,13 +29,16 @@ jobs:
         if: github.ref_name == 'development'
         run: |
           lerna version --conventional-commits --conventional-prerelease --preid next --yes --no-push
+          git push origin development
           node devops/publish-tags.js
 
       - name: "Create stable release"
         if: github.ref_name == 'master'
         run: |
           lerna version --conventional-commits --conventional-graduate --yes --no-push
+          git push origin master
           node devops/publish-tags.js
+#         # Synchronise the development branch with the master branch
           git checkout development
           git pull origin development
           git pull origin master --ff
