@@ -20,7 +20,7 @@ if (unpublishedTags.length === 0) {
 
   unpublishedTags.forEach((tag) => {
     process.stdout.write(`* ${tag}: `);
-    execSync(`git push origin ${tag} --dry-run`, { stdio: 'pipe' });
+    execSync(`git push origin ${tag}`, { stdio: 'pipe' });
     process.stdout.write(`done\n`);
   });
 }
