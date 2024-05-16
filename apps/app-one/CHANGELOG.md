@@ -3,6 +3,105 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0-next.8](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.36.0-next.7...@semantic-versioned-monorepo-setup/app-one@0.36.0-next.8) (2024-05-16)
+
+
+### Features
+
+* feature 39 ([d43fa01](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/d43fa0157d2eb9337f3f83ce504dd6c1bc2f59c8))
+
+
+
+
+
+# [0.36.0-next.7](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.36.0-next.0...@semantic-versioned-monorepo-setup/app-one@0.36.0-next.7) (2024-05-16)
+
+
+### Features
+
+* feature 38 ([2c57975](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/2c5797557b81e2c0b4933ac5f6878811e2aa816c))
+
+
+
+
+
+# [0.36.0-next.6](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.36.0-next.0...@semantic-versioned-monorepo-setup/app-one@0.36.0-next.6) (2024-05-16)
+
+
+### Features
+
+* feature 38 ([2c57975](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/2c5797557b81e2c0b4933ac5f6878811e2aa816c))
+
+
+
+
+
+# [0.36.0-next.5](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.36.0-next.0...@semantic-versioned-monorepo-setup/app-one@0.36.0-next.5) (2024-05-16)
+
+
+### Features
+
+* feature 38 ([2c57975](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/2c5797557b81e2c0b4933ac5f6878811e2aa816c))
+
+
+
+
+
+# [0.36.0-next.4](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.36.0-next.0...@semantic-versioned-monorepo-setup/app-one@0.36.0-next.4) (2024-05-16)
+
+
+### Features
+
+* feature 38 ([2c57975](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/2c5797557b81e2c0b4933ac5f6878811e2aa816c))
+
+
+
+
+
+# [0.36.0-next.3](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.36.0-next.0...@semantic-versioned-monorepo-setup/app-one@0.36.0-next.3) (2024-05-16)
+
+
+### Features
+
+* feature 38 ([2c57975](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/2c5797557b81e2c0b4933ac5f6878811e2aa816c))
+
+
+
+
+
+# [0.36.0-next.2](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.36.0-next.0...@semantic-versioned-monorepo-setup/app-one@0.36.0-next.2) (2024-05-16)
+
+
+### Features
+
+* feature 38 ([2c57975](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/2c5797557b81e2c0b4933ac5f6878811e2aa816c))
+
+
+
+
+
+# [0.36.0-next.1](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.36.0-next.0...@semantic-versioned-monorepo-setup/app-one@0.36.0-next.1) (2024-05-16)
+
+
+### Features
+
+* feature 38 ([2c57975](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/2c5797557b81e2c0b4933ac5f6878811e2aa816c))
+
+
+
+
+
+# [0.36.0-next.0](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.35.0...@semantic-versioned-monorepo-setup/app-one@0.36.0-next.0) (2024-05-13)
+
+
+### Features
+
+* adding feature 37 ([fc4c7a9](https://github.com/gbublys/semantic-versioned-monorepo-setup/commit/fc4c7a9d7d32773357fa07bc88f51e35a5a9588b))
+
+
+
+
+
 # [0.35.0](https://github.com/gbublys/semantic-versioned-monorepo-setup/compare/@semantic-versioned-monorepo-setup/app-one@0.35.0-next.0...@semantic-versioned-monorepo-setup/app-one@0.35.0) (2024-05-13)
 
 **Note:** Version bump only for package @semantic-versioned-monorepo-setup/app-one
